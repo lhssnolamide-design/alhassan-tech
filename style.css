@@ -1,0 +1,655 @@
+/* =========================
+   ALHASSAN TECH
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:linear-gradient(180deg,#000000,#0d0d0d,#151515);
+    color:white;
+    scroll-behavior:smooth;
+}
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#111;
+    border-bottom:2px solid gold;
+}
+
+nav h1{
+    color:gold;
+    font-size:32px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:gold;
+}
+
+/* Hero */
+
+/* =========================
+   PREMIUM HERO
+========================= */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+    padding:80px 8%;
+    background:linear-gradient(135deg,#000,#111,#1a1a1a);
+}
+
+.hero h2{
+    font-size:65px;
+    color:gold;
+    line-height:1.2;
+    margin-bottom:25px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#ddd;
+    margin-bottom:35px;
+    line-height:1.8;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:520px;
+    border-radius:20px;
+    border:3px solid gold;
+    box-shadow:0 0 40px rgba(255,215,0,.5);
+    transition:.4s;
+}
+
+.hero-image img:hover{
+    transform:scale(1.05);
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:42px;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:20px;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.hero h2{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+}.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:60px;
+}
+
+.hero-text{
+    flex:1;
+}
+
+.hero-image{
+    flex:1;
+    text-align:center;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:500px;
+    border-radius:20px;
+    border:3px solid gold;
+    box-shadow:0 0 30px rgba(255,215,0,.4);
+}
+
+.btn{
+    display:inline-block;
+    padding:18px 40px;
+    background:gold;
+    color:black;
+    text-decoration:none;
+    font-weight:bold;
+    border-radius:8px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:white;
+}
+
+@media(max-width:900px){
+
+.hero{
+    flex-direction:column;
+    text-align:center;
+}
+
+}/* =========================
+   SERVICES
+========================= */
+
+.services{
+    padding:80px 8%;
+    background:#111;
+}
+
+.services h2{
+    text-align:center;
+    color:gold;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.service-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(280px, 1fr));
+    gap:30px;
+}
+
+.service-card{
+    background:#1b1b1b;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:30px;
+    transition:0.3s;
+}
+
+.service-card h3{
+    color:gold;
+    margin-bottom:15px;
+}
+
+.service-card p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+.service-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,215,0,0.3);
+}/* =========================
+   ORDER
+========================= */
+
+.order{
+    padding:80px 8%;
+}
+
+.order h2{
+    text-align:center;
+    color:gold;
+    margin-bottom:40px;
+    font-size:40px;
+}
+
+#orderForm{
+    max-width:700px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+#orderForm input,
+#orderForm select,
+#orderForm textarea{
+    padding:18px;
+    border:2px solid gold;
+    border-radius:10px;
+    background:#1b1b1b;
+    color:white;
+    font-size:16px;
+}
+
+#orderForm textarea{
+    height:180px;
+    resize:none;
+}
+
+#orderForm button{
+    background:gold;
+    color:black;
+    border:none;
+    padding:18px;
+    font-size:18px;
+    font-weight:bold;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#orderForm button:hover{
+    background:white;
+}/* =========================
+   CONTACT
+========================= */
+
+.contact{
+    padding:80px 8%;
+    text-align:center;
+    background:#111;
+}
+
+.contact h2{
+    color:gold;
+    font-size:40px;
+    margin-bottom:20px;
+}
+
+.contact p{
+    color:#ddd;
+    margin-bottom:30px;
+}
+
+.email-box{
+    display:inline-flex;
+    gap:15px;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+}
+
+.email-box span{
+    background:#1b1b1b;
+    border:2px solid gold;
+    padding:15px 20px;
+    border-radius:10px;
+    color:white;
+    font-weight:bold;
+}
+
+.email-box button{
+    background:gold;
+    color:black;
+    border:none;
+    padding:15px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    font-weight:bold;
+}
+
+.email-box button:hover{
+    background:white;
+}/* =========================
+   WHY CHOOSE US
+========================= */
+
+.why-us{
+    padding:80px 8%;
+    background:#0d0d0d;
+}
+
+.why-us h2{
+    text-align:center;
+    color:gold;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.why-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
+    gap:25px;
+}
+
+.why-card{
+    background:#1b1b1b;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:30px;
+    transition:.3s;
+}
+
+.why-card h3{
+    color:gold;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#ddd;
+    line-height:1.6;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,215,0,.35);
+}/* =========================
+   PORTFOLIO
+========================= */
+
+.portfolio{
+    padding:80px 8%;
+    background:#111;
+}
+
+.portfolio h2{
+    text-align:center;
+    color:gold;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.portfolio-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+}
+
+.portfolio-card{
+    background:#1b1b1b;
+    border:2px solid gold;
+    border-radius:15px;
+    overflow:hidden;
+    transition:0.3s;
+}
+
+.portfolio-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.portfolio-card h3{
+    color:gold;
+    padding:20px 20px 10px;
+}
+
+.portfolio-card p{
+    color:#ddd;
+    padding:0 20px 20px;
+    line-height:1.6;
+}
+
+.portfolio-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 25px rgba(255,215,0,0.3);
+}/* =========================
+   FOOTER
+========================= */
+
+.footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:60px 8% 30px;
+    border-top:2px solid gold;
+}
+
+.footer h2{
+    color:gold;
+    font-size:32px;
+    margin-bottom:15px;
+}
+
+.footer p{
+    color:#ddd;
+    margin:10px 0;
+}
+
+.footer span{
+    color:gold;
+    font-weight:bold;
+}
+
+.footer-links{
+    margin:25px 0;
+}
+
+.footer-links a{
+    color:white;
+    text-decoration:none;
+    margin:0 15px;
+    transition:.3s;
+}
+
+.footer-links a:hover{
+    color:gold;
+}
+
+#topBtn{
+    background:gold;
+    color:black;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    font-weight:bold;
+    transition:.3s;
+}
+
+#topBtn:hover{
+    background:white;
+}
+
+.copyright{
+    margin-top:30px;
+    font-size:14px;
+    color:#888;
+}/* =========================
+   SCROLL ANIMATION
+========================= */
+
+.reveal{
+    opacity:0;
+    transform:translateY(60px);
+    transition:all .8s ease;
+}
+
+.reveal.active{
+    opacity:1;
+    transform:translateY(0);
+}/* =========================
+   STATISTICS
+========================= */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:25px;
+    padding:80px 8%;
+    background:#111;
+    text-align:center;
+}
+
+.stat-box{
+    background:#1b1b1b;
+    border:2px solid gold;
+    border-radius:15px;
+    padding:35px 20px;
+    transition:.3s;
+}
+
+.stat-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 20px rgba(255,215,0,.3);
+}
+
+.stat-box h2{
+    color:gold;
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+.stat-box p{
+    color:#ddd;
+    font-size:18px;
+}
+.secondary-btn{
+    margin-left:15px;
+    background:transparent;
+    border:2px solid gold;
+    color:gold;
+}
+
+.secondary-btn:hover{
+    background:gold;
+    color:black;
+}
+/* =========================
+   TEXT SELECTION
+========================= */
+
+::selection{
+    background:gold;
+    color:black;
+}
+/* =========================
+   LOGO
+========================= */
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    width:55px;
+    height:55px;
+    border-radius:50%;
+    border:2px solid gold;
+}
+
+.logo h1{
+    color:gold;
+}
+/* =========================
+   PHONE RESPONSIVE DESIGN
+========================= */
+
+@media (max-width: 768px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+    nav{
+        padding:15px 5%;
+    }
+
+    .logo img{
+        width:45px;
+        height:45px;
+    }
+
+    .logo h1{
+        font-size:22px;
+    }
+
+    .hero{
+        min-height:auto;
+        padding:70px 5%;
+    }
+
+    .hero h2{
+        font-size:40px;
+    }
+
+    .hero p{
+        font-size:18px;
+    }
+
+    .hero-image img{
+        max-width:100%;
+    }
+
+    .about,
+    .why-us,
+    .portfolio,
+    .stats{
+        padding:60px 5%;
+    }
+
+    .about-text h2,
+    .why-us h2,
+    .portfolio h2{
+        font-size:32px;
+    }
+
+    .portfolio-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-links{
+        display:flex;
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .footer-links a{
+        margin:0;
+    }
+
+}
+/* =========================
+   ORDER BUTTON
+========================= */
+
+#orderForm button[type="submit"]{
+    width:100%;
+    padding:16px;
+    margin-top:15px;
+    background:gold;
+    color:#000;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:0.3s ease;
+}
+
+#orderForm button[type="submit"]:hover{
+    transform:translateY(-3px);
+    box-shadow:0 8px 25px rgba(255,215,0,0.4);
+}
+
+#orderForm button[type="submit"]:active{
+    transform:scale(0.98);
+}
