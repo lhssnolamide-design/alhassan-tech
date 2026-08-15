@@ -653,3 +653,27 @@ nav ul{
 #orderForm button[type="submit"]:active{
     transform:scale(0.98);
 }
+/* =========================
+   MOBILE MENU
+========================= */
+
+@media (max-width: 768px){
+
+    nav{
+        position: relative;
+    }
+
+    nav ul{
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+    }
+
+    nav ul.active{
+        display: flex;
+    }
+
+}
